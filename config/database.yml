@@ -14,5 +14,5 @@ development:
 
 test: &test
   <<: *common
-  database: test_app_development
+  database: test_app_test
 
