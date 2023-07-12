@@ -1,0 +1,18 @@
+common: &common
+  adapter: mysql2
+  collation: utf8mb4_unicode_ci
+  encoding: utf8mb4
+  host: host.orb.internal
+  username: root
+  password: password
+  pool: 5
+  reconnect: false
+
+development:
+  <<: *common
+  database: test_app_development
+
+test: &test
+  <<: *common
+  database: test_app_development
+
